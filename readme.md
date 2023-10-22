@@ -34,3 +34,20 @@ QMK is developed and maintained by Jack Humbert of OLKB with contributions from 
 ## Official Website
 
 [qmk.fm](https://qmk.fm) is the official website of QMK, where you can find links to this page, the documentation, and the keyboards supported by QMK.
+
+---
+
+# Synodra CheatSheet
+
+Create a new keymap
+```shell
+qmk config user.keymap=Synodra3
+qmk config user.keyboard=sporewoh/bancouver40
+qmk new-keymap
+```
+=> [CLI Configuration](https://github.com/qmk/qmk_firmware/blob/master/docs/cli_configuration.md)
+
+Compile the keymap to be used in qmk tool
+```shell
+qmk compile -kb sporewoh/bancouver40 -km Synodra3
+```
